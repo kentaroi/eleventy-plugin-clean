@@ -1,0 +1,4 @@
+/node_modules
+
+/test/fixtures/passthrough-copy
+/test/fixtures/passthrough-copy-directories-configured

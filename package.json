@@ -1,0 +1,36 @@
+{
+  "name": "eleventy-plugin-clean",
+  "version": "1.0.0",
+  "description": "An Eleventy plugin to keep the output directory clean",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --serial"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentaroi/eleventy-plugin-clean.git"
+  },
+  "keywords": [
+    "eleventy-plugin",
+    "clean",
+    "output directory",
+    "eleventy",
+    "11ty"
+  ],
+  "author": "Kentaro Imai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kentaroi/eleventy-plugin-clean/issues"
+  },
+  "homepage": "https://github.com/kentaroi/eleventy-plugin-clean#readme",
+  "dependencies": {
+    "fast-glob": "^3.2.11",
+    "is-glob": "^4.0.3",
+    "kleur": "^4.1.4",
+    "lmdb": "^2.4.4"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "ava": "^4.3.0"
+  }
+}
