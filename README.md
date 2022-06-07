@@ -1,5 +1,5 @@
 # eleventy-plugin-clean
-[![CI](https://github.com/kentaroi/eleventy-plugin-clean/actions/workflows/CI/badge.svg?branch=main)](https://github.com/kentaroi/eleventy-plugin-clean/actions?query=branch%3Amain+workflow%3ACI)
+[![CI](https://github.com/kentaroi/eleventy-plugin-clean/workflows/CI/badge.svg?branch=main)](https://github.com/kentaroi/eleventy-plugin-clean/actions?query=branch%3Amain+workflow%3ACI)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 This is an experimental plugin for Eleventy to keep the output directory clean.
