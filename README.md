@@ -5,7 +5,7 @@
 
 This is an experimental plugin for [Eleventy](https://github.com/11ty/eleventy) to keep the output directory clean.
 
-You wouldn't do anything crazy like that, but please don't put your valuable files directly in your `output` directory without a backup.
+I know you wouldn't do this, but please don't put your valuable files directly in your `output` directory without a backup.
 
 ## Installation
 
@@ -32,7 +32,7 @@ If you are not using `git`, add it to your `.eleventyignore` file instead of the
 
 ## Usage
 
-eleventy-plugin-clean does not delete files which were not generated from Eleventy or had been generated before the installation of the plugin.
+eleventy-plugin-clean does not delete files which were not written by Eleventy or had been created before the installation of the plugin.
 
 Therefore, you may want to clean the `output` directory once before using it.
 ```bash
