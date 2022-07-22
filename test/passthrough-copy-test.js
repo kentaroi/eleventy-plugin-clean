@@ -11,7 +11,7 @@ let db;
 test.before(t => {
   dir = createProject("passthrough-copy");
   execSync("npx @11ty/eleventy", { cwd: dir });
-  db = lmdb.open(path.join(dir, ".eleventy-plugin-clean"));
+  db = lmdb.open(path.join(dir, ".plugin-clean"));
 });
 
 test.after.always(t => {

@@ -25,7 +25,7 @@ module.exports = function(eleventyConfig) {
 
 If you are using `git`, add the following line to your `.gitignore`.
 ```gitignore
-.elventy-plugin-clean
+.plugin-clean
 ```
 
 If you are not using `git`, add it to your `.eleventyignore` file instead of the `.gitignore` file.
@@ -41,7 +41,7 @@ rm -rf _site/*
 
 ## What it actually does
 
-eleventy-plugin-clean uses LMDB, a key-value store, to store all the data needed to keep the `output` directory clean. The DB is located at `.eleventy-plugin-clean` in your project root.
+eleventy-plugin-clean uses LMDB, a key-value store, to store all the data needed to keep the `output` directory clean. The DB is located at `.plugin-clean` in your project root.
 
 It keeps the build number of Eleventy project.
 The build number is an integer value that it automatically increases with each Eleventy build.
