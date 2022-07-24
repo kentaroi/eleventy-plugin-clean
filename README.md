@@ -3,9 +3,11 @@
 [![CI](https://github.com/kentaroi/eleventy-plugin-clean/workflows/CI/badge.svg?branch=main)](https://github.com/kentaroi/eleventy-plugin-clean/actions?query=branch%3Amain+workflow%3ACI)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/kentaroi/eleventy-plugin-clean/blob/main/LICENSE)
 
-This is an experimental plugin for [Eleventy](https://github.com/11ty/eleventy) to keep the output directory clean.
+This is an experimental plugin for [Eleventy](https://github.com/11ty/eleventy) to keep [the output directory](https://www.11ty.dev/docs/config/#output-directory) clean.
 
-I know you wouldn't do this, but please don't put your valuable files directly in your `output` directory without a backup.
+The plugin does not delete any files not created by [Eleventy](https://github.com/11ty/eleventy). It deletes all the files, previously created by [Eleventy](https://github.com/11ty/eleventy) but no longer created, in [the output directory](https://www.11ty.dev/docs/config/#output-directory).
+
+I know you wouldn't do this, but please don't put your valuable files directly in your [output directory](https://www.11ty.dev/docs/config/#output-directory) without a backup.
 
 ## Installation
 
@@ -15,7 +17,7 @@ npm install eleventy-plugin-clean
 
 Add it to Eleventy config file (usually `.eleventy.js`)
 
-```JavaScript
+```javascript
 const clean = require("eleventy-plugin-clean");
 
 module.exports = function(eleventyConfig) {
