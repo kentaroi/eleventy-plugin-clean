@@ -5,7 +5,7 @@
 
 This is an experimental plugin for [Eleventy](https://github.com/11ty/eleventy) to keep [the output directory](https://www.11ty.dev/docs/config/#output-directory) clean.
 
-The plugin does not delete any files not created by [Eleventy](https://github.com/11ty/eleventy). It deletes all the files, previously created by [Eleventy](https://github.com/11ty/eleventy) but no longer created, in [the output directory](https://www.11ty.dev/docs/config/#output-directory).
+The plugin does not delete any files not created by [Eleventy](https://github.com/11ty/eleventy). It deletes all the files, previously created by [Eleventy](https://github.com/11ty/eleventy) but no longer created/updated, in [the output directory](https://www.11ty.dev/docs/config/#output-directory).
 
 ⚠️ Don't use weird `input` and `output` directories setup even if the official doc recommends, such as
 [https://www.11ty.dev/docs/usage/#using-the-same-input-and-output](https://www.11ty.dev/docs/usage/#using-the-same-input-and-output).
@@ -60,7 +60,7 @@ At the end of each build, it removes the files in the `output` directory which h
 
 If you are using plugins that write files in the output directory by itself instead of using Eleventy, [eleventy-plugin-clean](https://github.com/kentaroi/eleventy-plugin-clean) does not delete such files when they are no longer created/updated.
 
-Such plugins need to call `updateFileRecord(outputPath, inputPath)` to be managed by [eleventy-plugin-clean](https://github.com/kentaroi/eleventy-plugin-clean).
+Such plugins need to call `updateFileRecord(outputPath, inputPath)` for files to be managed by [eleventy-plugin-clean](https://github.com/kentaroi/eleventy-plugin-clean).
 
 For example, [eleventy-sass](https://github.com/kentaroi/eleventy-sass) does call `updateFileRecord()`, and all of the files in the output directory will be managed by [eleventy-plugin-clean](https://github.com/kentaroi/eleventy-plugin-clean).
 
