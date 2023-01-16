@@ -28,10 +28,14 @@
     "fast-glob": "^3.2.11",
     "is-glob": "^4.0.3",
     "kleur": "^4.1.4",
-    "lmdb": "^2.4.4"
+    "lmdb": "^2.4.4",
+    "recursive-copy": "^2.0.14"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "1.0.0 - 1.0.2 || 2.0.0-canary.1 - 2.0.0-canary.30",
     "ava": "^4.3.0"
+  },
+  "peerDependencies": {
+    "@11ty/eleventy": "1.0.0 - 1.0.2 || 2.0.0-canary.1 - 2.0.0-canary.30"
   }
 }
