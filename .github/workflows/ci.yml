@@ -21,9 +21,9 @@ jobs:
         tag: ["latest", "canary"]
     name: Node.js ${{ matrix.node }} on ${{ matrix.os }} against @11ty/eleventy@${{ matrix.tag }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
           # cache: npm
