@@ -32,10 +32,10 @@
     "recursive-copy": "^2.0.14"
   },
   "devDependencies": {
-    "@11ty/eleventy": "1.0.0 - 1.0.2 || 2.0.0-canary.1 - 2.0.0-canary.30",
+    "@11ty/eleventy": "1.0.0 - 1.0.2 || 2.0.0-canary.1 - 2.0.0-canary.34 || 2.0.0-beta.1 - 2.0.0-beta.2",
     "ava": "^4.3.0"
   },
   "peerDependencies": {
-    "@11ty/eleventy": "1.0.0 - 1.0.2 || 2.0.0-canary.1 - 2.0.0-canary.30"
+    "@11ty/eleventy": "1.0.0 - 1.0.2 || 2.0.0-canary.1 - 2.0.0-canary.34 || 2.0.0-beta.1 - 2.0.0-beta.2"
   }
 }
