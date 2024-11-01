@@ -24,6 +24,9 @@
     "url": "https://github.com/kentaroi/eleventy-plugin-clean/issues"
   },
   "homepage": "https://github.com/kentaroi/eleventy-plugin-clean#readme",
+  "engines": {
+    "node": ">=20.11"
+  },
   "dependencies": {
     "debug": "^4.3.7",
     "kleur": "^4.1.5",
