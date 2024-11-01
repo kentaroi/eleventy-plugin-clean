@@ -1,6 +1,6 @@
 # eleventy-plugin-clean
 [![npm](https://img.shields.io/npm/v/eleventy-plugin-clean)](https://www.npmjs.com/package/eleventy-plugin-clean)
-[![CI](https://github.com/kentaroi/eleventy-plugin-clean/workflows/CI/badge.svg?branch=main)](https://github.com/kentaroi/eleventy-plugin-clean/actions?query=branch%3Amain+workflow%3ACI)
+[![CI](https://github.com/kentaroi/eleventy-plugin-clean/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/kentaroi/eleventy-plugin-clean/actions/workflows/ci.yml?query=branch%3Amain)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/kentaroi/eleventy-plugin-clean/blob/main/LICENSE)
 
 This is an experimental plugin for [Eleventy](https://github.com/11ty/eleventy) to keep [the output directory](https://www.11ty.dev/docs/config/#output-directory) clean.
