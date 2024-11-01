@@ -16,13 +16,22 @@ The plugin does not delete any files not created by [Eleventy](https://github.co
 npm install eleventy-plugin-clean
 ```
 
-Add it to Eleventy config file (usually `.eleventy.js`)
+Add it to Eleventy config file (usually `eleventy.config.js`)
 
 ```javascript
-const clean = require("eleventy-plugin-clean");
+// ES module
+import clean from "eleventy-plugin-clean";
 
-module.exports = function(eleventyConfig) {
+export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(clean);
+};
+```
+
+```javascript
+// CommonJS
+module.exports = async function(eleventyConfig) {
+  const clean = (await import("eleventy-plugin-clean")).default;
+  await eleventyConfig.addPlugin(clean);
 };
 ```
 
