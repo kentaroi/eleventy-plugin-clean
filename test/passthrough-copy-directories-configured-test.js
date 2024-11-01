@@ -1,6 +1,6 @@
-import { execSync } from "child_process";
-import path from "path";
-import fs from "fs";
+import { execSync } from "node:child_process";
+import path from "node:path";
+import fs from "node:fs";
 import lmdb from "lmdb";
 import test from "ava";
 import createProject from "./_create-project.js";

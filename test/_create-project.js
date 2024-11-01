@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 const __dirname = import.meta.dirname
 
 export default function(projectName, sourceProject = "eleventy-project") {
