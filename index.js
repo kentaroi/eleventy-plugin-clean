@@ -1,1 +1,1 @@
-module.exports = require("./lib/eleventy-clean");
+export { default } from "./lib/eleventy-clean.js";

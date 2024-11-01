@@ -1,10 +1,10 @@
-const { execSync } = require("child_process");
-const path = require("path");
-const fs = require("fs");
-const lmdb = require("lmdb");
-const test = require("ava");
-const createProject = require("./_create-project");
-const utils = require("../lib/utils");
+import { execSync } from "child_process";
+import path from "path";
+import fs from "fs";
+import lmdb from "lmdb";
+import test from "ava";
+import createProject from "./_create-project.js";
+import { getFilePathsInDirectory } from "../lib/utils.js";
 let dir;
 let db;
 
@@ -20,7 +20,7 @@ test.after.always(t => {
 
 test("paths in \"dist\" equals to paths in DB", async t => {
   let outputDir = path.join(dir, "dist");
-  let outputPaths = await utils.getFilePathsInDirectory(outputDir);
+  let outputPaths = await getFilePathsInDirectory(outputDir);
   // console.error({ outputPaths: outputPaths });
 
   // console.error("outputPaths in DB:");

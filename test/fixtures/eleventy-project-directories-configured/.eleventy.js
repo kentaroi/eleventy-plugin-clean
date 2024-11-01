@@ -1,6 +1,6 @@
-const clean = require("../../..");
+import clean from "../../../index.js";
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
   eleventyConfig.addPlugin(clean);
 
   eleventyConfig.addPassthroughCopy("**/*.foo");

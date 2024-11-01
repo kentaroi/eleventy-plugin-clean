@@ -1,7 +1,8 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+const __dirname = import.meta.dirname
 
-module.exports = function(projectName, sourceProject = "eleventy-project") {
+export default function(projectName, sourceProject = "eleventy-project") {
   const sourceDir = path.join(__dirname, "fixtures", sourceProject);
   let projectDir = path.join(__dirname, "fixtures", projectName);
   fs.rmSync(projectDir, { recursive: true, force: true });

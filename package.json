@@ -3,6 +3,7 @@
   "version": "1.2.6",
   "description": "An Eleventy plugin to keep the output directory clean",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "ava --serial"
   },
