@@ -1,5 +1,6 @@
 # eleventy-plugin-clean
 [![npm](https://img.shields.io/npm/v/eleventy-plugin-clean)](https://www.npmjs.com/package/eleventy-plugin-clean)
+[![NPM dev or peer Dependency Version](https://img.shields.io/npm/dependency-version/eleventy-plugin-clean/peer/%4011ty%2Feleventy)](https://github.com/11ty/eleventy)
 [![CI](https://github.com/kentaroi/eleventy-plugin-clean/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/kentaroi/eleventy-plugin-clean/actions/workflows/ci.yml?query=branch%3Amain)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/kentaroi/eleventy-plugin-clean/blob/main/LICENSE)
 
