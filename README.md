@@ -12,6 +12,7 @@ The plugin does not delete any files not created by [Eleventy](https://github.co
 
 ## Installation
 
+### For Eleventy 3.x
 ```bash
 npm install eleventy-plugin-clean
 ```
@@ -22,7 +23,7 @@ Add it to Eleventy config file (usually `eleventy.config.js`)
 // ES module
 import clean from "eleventy-plugin-clean";
 
-export default async function(eleventyConfig) {
+export default function(eleventyConfig) {
   eleventyConfig.addPlugin(clean);
 };
 ```
@@ -35,6 +36,21 @@ module.exports = async function(eleventyConfig) {
 };
 ```
 
+### For Eleventy 1.x and 2.x
+```bash
+npm install eleventy-plugin-clean@^1
+```
+
+Add it to Eleventy config file (usually `.eleventy.js`)
+```javascript
+const clean = require("eleventy-plugin-clean");
+
+export default async function(eleventyConfig) {
+  eleventyConfig.addPlugin(clean);
+};
+```
+
+### Shared Setup for Eleventy 1.x, 2.x and 3.x
 If you are using `git`, add the following line to your `.gitignore`.
 ```gitignore
 .plugin-clean
