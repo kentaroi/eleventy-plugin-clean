@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-clean",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "An Eleventy plugin to keep the output directory clean",
   "main": "index.js",
   "type": "module",
